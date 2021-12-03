@@ -55,6 +55,7 @@ addSloganButton.addEventListener('click', () => {
 });
 
 function displaySlogan(sloganArray) {
+    // Clear DOM
     clearSlogans();
     for (let slogan of sloganArray) {
         const h = document.createElement('h3');
@@ -65,7 +66,9 @@ function displaySlogan(sloganArray) {
 
 // Helper functions
 function clearSlogans() {
-    
+    while (sloganDisplayEl.firstChild) {
+        sloganDisplayEl.firstChild.remove();
+    }
 }
 
 
