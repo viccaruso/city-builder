@@ -20,47 +20,68 @@
     </header>
     <main>
         <section class="main-section">
-            <img class="main-logo" src="./assets/alchemy-logo.png" />
-            <h2>
-                Welcome to Alchemy Bootstrap!
-            </h2>
-
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam repellendus similique consectetur
-                voluptas facilis molestiae voluptates nobis error sapiente, ad, ipsa vero non, sint eligendi? Eos
-                praesentium iusto magnam exercitationem.
-                Earum sunt voluptatibus molestias, sint voluptatum quos reiciendis. Id asperiores deleniti dolores
-                provident, eius, nostrum aperiam vel, optio qui illo corrupti in. Eum quam, est nemo porro sapiente
-                excepturi assumenda.
-                Rerum unde quidem maxime. Ullam, dolores labore molestias voluptatibus adipisci quod? Quaerat nihil
-                inventore molestiae assumenda, voluptates vel necessitatibus eligendi? Accusamus ratione eligendi
-                reprehenderit? Beatae incidunt molestias ea soluta nulla.
-                Fugiat quae soluta voluptate mollitia praesentium modi ex illo, autem assumenda, vel aliquam fugit
-                possimus dolorem esse corporis ipsa! Voluptatem sapiente error non, ea optio suscipit quasi maxime nobis
-                ex?
-                Et ipsa tenetur ullam ab nesciunt quas fugit velit impedit illum esse eligendi corporis culpa
-                praesentium aspernatur ex sint veniam quidem, doloribus corrupti hic vitae. Eum neque ducimus omnis
-                exercitationem?
-            </p>
-            <hr />
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam repellendus similique consectetur
-                voluptas facilis molestiae voluptates nobis error sapiente, ad, ipsa vero non, sint eligendi? Eos
-                praesentium iusto magnam exercitationem.
-                Earum sunt voluptatibus molestias, sint voluptatum quos reiciendis. Id asperiores deleniti dolores
-                provident, eius, nostrum aperiam vel, optio qui illo corrupti in. Eum quam, est nemo porro sapiente
-                excepturi assumenda.
-                Rerum unde quidem maxime. Ullam, dolores labore molestias voluptatibus adipisci quod? Quaerat nihil
-                inventore molestiae assumenda, voluptates vel necessitatibus eligendi? Accusamus ratione eligendi
-                reprehenderit? Beatae incidunt molestias ea soluta nulla.
-                Fugiat quae soluta voluptate mollitia praesentium modi ex illo, autem assumenda, vel aliquam fugit
-                possimus dolorem esse corporis ipsa! Voluptatem sapiente error non, ea optio suscipit quasi maxime nobis
-                ex?
-                Et ipsa tenetur ullam ab nesciunt quas fugit velit impedit illum esse eligendi corporis culpa
-                praesentium aspernatur ex sint veniam quidem, doloribus corrupti hic vitae. Eum neque ducimus omnis
-                exercitationem?
-            </p>
-
+            <div id='grid-container'>
+                <div class='content-row'>
+                    <div>
+                        <h3>Buildings</h3>
+                        <img id='buildings-image'>This is an image
+                    </div>
+                    <div>
+                        <h3>Waterfront</h3>
+                        <img id='waterfront-image'>This is an image
+                    </div>
+                    <div>
+                        <h3>Park</h3>
+                        <img id='park-image'>This is an image
+                    </div>
+                </div>
+                <div class='content-row'>
+                    <div>
+                        <label>Building Density:
+                            <select>
+                                <option id='buildings-default'>-- select --</option>
+                                <option>Sparse</option>
+                                <option>Dense</option>
+                                <option>More Dense</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div>
+                        <label>Water Feature:
+                            <select>
+                                <option id='waterfront-default'>-- select --</option>
+                                <option>Canals</option>
+                                <option>Fjord</option>
+                                <option>Ocean</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div>
+                        <label>Park Type:
+                            <select>
+                                <option id='park-default'>-- select --</option>
+                                <option>Grassy</option>
+                                <option>Skate</option>
+                                <option>Woodsy</option>
+                            </select>
+                        </label>
+                    </div>
+                </div>
+                <div class='content-row'>
+                    <label>Add a slogan: 
+                    <input type='text' placeholder='placeholder'>
+                </label>
+                    <button>button</button>
+                </div>
+                <div class='content-row'>
+                    <div>
+                        <p>We built</p>
+                        <p>this city</p>
+                        <p>on rock</p>
+                        <p>and roll</p>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
