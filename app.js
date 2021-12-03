@@ -12,6 +12,10 @@ const sloganTextFieldEl = document.querySelector('#slogan-field');
 const addSloganButton = document.querySelector('#slogan-add-button');
 const changeStatsEl = document.querySelector('#change-stats');
 const sloganDisplayEl = document.querySelector('#slogan-display');
+const defaultBuildingsSelectEl = document.querySelector('#buildings-default');
+const defaultWaterfrontSelectEl = document.querySelector('#waterfront-default');
+const defaultParkSelectEl = document.querySelector('#park-default');
+
 
 // Set initial state values
 let buildingChanges = 0;
@@ -21,6 +25,8 @@ const sloganArray = [];
 
 // Set up event listeners 
 buildingsDropdownEl.addEventListener('change', () => {
+    // Disable -- select -- option from dropdown
+    defaultBuildingsSelectEl.setAttribute('disabled', true);
     // Update counter state
     buildingChanges++;
     // Update image 
@@ -30,6 +36,8 @@ buildingsDropdownEl.addEventListener('change', () => {
 });
 
 waterfrontDropdownEl.addEventListener('change', () => {
+    // Disable -- select -- option from dropdown
+    defaultWaterfrontSelectEl.setAttribute('disabled', true);
     // Update counter state
     waterfrontChanges++;
     // Update image 
@@ -39,6 +47,8 @@ waterfrontDropdownEl.addEventListener('change', () => {
 });
 
 parkDropdownEl.addEventListener('change', () => {
+    // Disable -- select -- option from dropdown
+    defaultParkSelectEl.setAttribute('disabled', true);
     // Update counter state
     parkChanges++;
     // Update image 
