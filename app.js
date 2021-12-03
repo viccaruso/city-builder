@@ -23,7 +23,8 @@ const sloganArray = [];
 buildingsDropdownEl.addEventListener('change', () => {
     // Update counter state
     buildingChanges++;
-
+    // Update image 
+    buildingImgEl.src = `./assets/buildings-${buildingsDropdownEl.value}.jpeg`;
     // Display state changes
     changeStatsEl.textContent = displayStats(buildingChanges, waterfrontChanges, parkChanges);
 });
@@ -31,7 +32,8 @@ buildingsDropdownEl.addEventListener('change', () => {
 waterfrontDropdownEl.addEventListener('change', () => {
     // Update counter state
     waterfrontChanges++;
-
+    // Update image 
+    waterfrontImgEl.src = `./assets/water-${waterfrontDropdownEl.value}.jpeg`;
     // Display state changes
     changeStatsEl.textContent = displayStats(buildingChanges, waterfrontChanges, parkChanges);
 });
@@ -39,26 +41,31 @@ waterfrontDropdownEl.addEventListener('change', () => {
 parkDropdownEl.addEventListener('change', () => {
     // Update counter state
     parkChanges++;
-
+    // Update image 
+    parkImgEl.src = `./assets/${parkDropdownEl.value}-park.jpeg`;
     // Display state changes
     changeStatsEl.textContent = displayStats(buildingChanges, waterfrontChanges, parkChanges);
 });
 
 addSloganButton.addEventListener('click', () => {
+    console.log(sloganTextFieldEl.value);
     sloganArray.push(sloganTextFieldEl.value);
-    sloganTextFieldEl.value = ''; 
-    clearDOM();
+    console.log(sloganArray);
     displaySlogan(sloganArray);
 });
 
-// Helper functions
-function clearDOM() {
-    changeStatsEl.textContent = '';
-    sloganDisplayEl.childNodes.remove;
+function displaySlogan(sloganArray) {
+    clearSlogans();
+    for (let slogan of sloganArray) {
+        const h = document.createElement('h3');
+        h.textContent = slogan;
+        sloganDisplayEl.append(h);
+    }
 }
 
-function displaySlogan(array) {
-    console.log('displaying slogan');
-    console.log(array);
+// Helper functions
+function clearSlogans() {
+    
 }
+
 
