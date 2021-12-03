@@ -10,7 +10,8 @@ const waterfrontDropdownEl = document.querySelector('#waterfront-dropdown');
 const parkDropdownEl = document.querySelector('#park-dropdown');
 const sloganTextFieldEl = document.querySelector('#slogan-field');
 const addSloganButton = document.querySelector('#slogan-add-button');
-const sloganDisplayEl = document.querySelector('slogan-display');
+const changeStatsEl = document.querySelector('#change-stats');
+const sloganDisplayEl = document.querySelector('#slogan-display');
 
 // Set initial state values
 let buildingChanges = 0;
@@ -27,8 +28,7 @@ buildingsDropdownEl.addEventListener('change', () => {
 
     // Reset DOM and display state changes
     clearDOM();
-    displayStats(buildingChanges, waterfrontChanges, parkChanges);
-    
+    changeStatsEl.textContent = displayStats(buildingChanges, waterfrontChanges, parkChanges);
 });
 
 waterfrontDropdownEl.addEventListener('change', () => {
@@ -50,7 +50,8 @@ addSloganButton.addEventListener('click', () => {
 
 // Helper functions
 function clearDOM() {
-    console.log('clearing dom');
+    changeStatsEl.textContent = '';
+    sloganDisplayEl.childNodes.remove;
 }
 
 function displaySlogan(array) {
