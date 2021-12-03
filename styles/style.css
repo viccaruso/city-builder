@@ -36,10 +36,13 @@ main {
     justify-content: center;
     align-items: center;
     margin-bottom: calc(var(--footer-height));
+    background-image: url('../assets/background-field.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 section {
-    background-color: var(--color5);
+    /* background-color: var(--color5); */
     max-width: 80%;
     display: flex;
     flex-direction: column;
@@ -49,7 +52,8 @@ section {
     padding-bottom: var(--gutter);
     margin-top: var(--gutter);
     margin-bottom: var(--gutter);
-    border: solid 2px var(--color1);
+    /* border: solid 2px var(--color1); */
+    background: transparent;
 }
 
 header {
