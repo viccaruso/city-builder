@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/home.css">
-    <title>Document</title>
+    <title>City Builder</title>
 </head>
 
 <body>
@@ -24,61 +24,56 @@
                 <div class='content-row'>
                     <div>
                         <h3>Buildings</h3>
-                        <img id='buildings-image'>This is an image
+                        <img id='buildings-image' >
                     </div>
                     <div>
                         <h3>Waterfront</h3>
-                        <img id='waterfront-image'>This is an image
+                        <img id='waterfront-image' >
                     </div>
                     <div>
                         <h3>Park</h3>
-                        <img id='park-image'>This is an image
+                        <img id='park-image' >
                     </div>
                 </div>
                 <div class='content-row'>
                     <div>
                         <label>Building Density:
-                            <select>
+                            <select id='buildings-dropdown'>
                                 <option id='buildings-default'>-- select --</option>
-                                <option>Sparse</option>
-                                <option>Dense</option>
-                                <option>More Dense</option>
+                                <option value='sparse'>Sparse</option>
+                                <option value='dense'>Dense</option>
+                                <option value='more-dense'>More Dense</option>
                             </select>
                         </label>
                     </div>
                     <div>
-                        <label>Water Feature:
-                            <select>
+                        <label>Waterfront Feature:
+                            <select id='waterfront-dropdown'>
                                 <option id='waterfront-default'>-- select --</option>
-                                <option>Canals</option>
-                                <option>Fjord</option>
-                                <option>Ocean</option>
+                                <option value='canals'>Canals</option>
+                                <option value='fjord'>Fjord</option>
+                                <option value='ocean'>Ocean</option>
                             </select>
                         </label>
                     </div>
                     <div>
                         <label>Park Type:
-                            <select>
+                            <select id='park-dropdown'>
                                 <option id='park-default'>-- select --</option>
-                                <option>Grassy</option>
-                                <option>Skate</option>
-                                <option>Woodsy</option>
+                                <option value='grassy'>Grassy</option>
+                                <option value='skate'>Skate</option>
+                                <option value='woodsy'>Woodsy</option>
                             </select>
                         </label>
                     </div>
                 </div>
-                <div class='content-row'>
-                    <label>Add a slogan: 
-                    <input type='text' placeholder='placeholder'>
-                </label>
-                    <button>button</button>
+                <div class='content-row'> 
+                    <input id='slogan-field' type='text' placeholder='Enter a new slogan'>
+                    <button id='slogan-add-button'>button</button>
                 </div>
                 <div class='content-row'>
-                    <div>
+                    <div id='slogan-display'>
                         <p>We built</p>
-                        <p>this city</p>
-                        <p>on rock</p>
-                        <p>and roll</p>
                     </div>
                 </div>
             </div>

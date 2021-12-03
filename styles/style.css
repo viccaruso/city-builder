@@ -109,8 +109,16 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    height:fit-content;
 }
 
 h3 {
     text-align: center;
 }
+
+#buildings-image, #waterfront-image, #park-image {
+    height: 400px;
+    width: 350px;
+    padding: 5px;
+}
+
