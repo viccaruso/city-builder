@@ -24,8 +24,7 @@ buildingsDropdownEl.addEventListener('change', () => {
     // Update counter state
     buildingChanges++;
 
-    // Reset DOM and display state changes
-    clearDOM();
+    // Display state changes
     changeStatsEl.textContent = displayStats(buildingChanges, waterfrontChanges, parkChanges);
 });
 
@@ -33,8 +32,7 @@ waterfrontDropdownEl.addEventListener('change', () => {
     // Update counter state
     waterfrontChanges++;
 
-    // Reset DOM and display state changes
-    clearDOM();
+    // Display state changes
     changeStatsEl.textContent = displayStats(buildingChanges, waterfrontChanges, parkChanges);
 });
 
@@ -42,8 +40,7 @@ parkDropdownEl.addEventListener('change', () => {
     // Update counter state
     parkChanges++;
 
-    // Reset DOM and display state changes
-    clearDOM();
+    // Display state changes
     changeStatsEl.textContent = displayStats(buildingChanges, waterfrontChanges, parkChanges);
 });
 
