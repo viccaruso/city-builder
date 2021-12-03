@@ -110,6 +110,7 @@ footer {
     flex-direction: row;
     justify-content: space-around;
     height:fit-content;
+    margin-top: 10px;
 }
 
 h3 {
@@ -122,3 +123,11 @@ h3 {
     padding: 5px;
 }
 
+#slogan-field {
+    width: 40%;
+}
+
+#input-row {
+    justify-content: center;
+    margin-top: 50px;
+}

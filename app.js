@@ -16,7 +16,6 @@ const defaultBuildingsSelectEl = document.querySelector('#buildings-default');
 const defaultWaterfrontSelectEl = document.querySelector('#waterfront-default');
 const defaultParkSelectEl = document.querySelector('#park-default');
 
-
 // Set initial state values
 let buildingChanges = 0;
 let waterfrontChanges = 0;
