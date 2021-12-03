@@ -58,10 +58,10 @@ parkDropdownEl.addEventListener('change', () => {
 });
 
 addSloganButton.addEventListener('click', () => {
-    console.log(sloganTextFieldEl.value);
     sloganArray.push(sloganTextFieldEl.value);
-    console.log(sloganArray);
     displaySlogan(sloganArray);
+    // Reset value of input field
+    sloganTextFieldEl.value = '';
 });
 
 function displaySlogan(sloganArray) {
