@@ -21,10 +21,8 @@ const sloganArray = [];
 
 // Set up event listeners 
 buildingsDropdownEl.addEventListener('change', () => {
-    // Update state
+    // Update counter state
     buildingChanges++;
-
-    console.log(buildingsDropdownEl.value);
 
     // Reset DOM and display state changes
     clearDOM();
@@ -32,13 +30,21 @@ buildingsDropdownEl.addEventListener('change', () => {
 });
 
 waterfrontDropdownEl.addEventListener('change', () => {
+    // Update counter state
     waterfrontChanges++;
-    console.log('changed');
+
+    // Reset DOM and display state changes
+    clearDOM();
+    changeStatsEl.textContent = displayStats(buildingChanges, waterfrontChanges, parkChanges);
 });
 
 parkDropdownEl.addEventListener('change', () => {
+    // Update counter state
     parkChanges++;
-    console.log('changed');
+
+    // Reset DOM and display state changes
+    clearDOM();
+    changeStatsEl.textContent = displayStats(buildingChanges, waterfrontChanges, parkChanges);
 });
 
 addSloganButton.addEventListener('click', () => {
